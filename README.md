@@ -85,5 +85,103 @@ behaviour means that systems can be changed, as business needs change, by adding
 classes and these classes can be accessed by the rest of the system without any regard to their specialised
 behaviour and without changing other parts of the current system.
 
+The Unified Modelling
+Language (UML)
+Introduction
+This chapter will introduce you to the roles of the Unified Modelling Language (UML) and explain the
+purpose of four of the most common diagrams (class diagrams, object diagrams, sequence diagrams
+and package diagrams). Particular emphasis will be placed on class diagrams as these are the most used
+part of the UML notation.
+Objectives
+By the end of this chapter you will be able to...
+• Explain what UML is and explain the role of four of the most common diagrams,
+• Draw class diagrams, object diagrams, sequence diagrams and package diagrams.
+The material covered in this chapter will be expanded on throughout later chapters of the book and the
+skills developed here will be used in later exercises (particularly regarding class diagrams.
+This chapter consists of six sections:-
+1) An introduction to UML
+2) UML Class Diagrams
+3) UML Syntax
+4) UML Package Diagrams
+5) UML Object diagrams
+6) UML Sequence Diagrams
+2.1 An Introduction to UML
+The Unified Modelling Language, UML, is sometimes described as though it was a methodology. It is not!
+A methodology is a system of processes in order to achieve a particular outcome e.g. an organised
+sequence of activities in order to gather user requirements. UML on the other hand a precise diagramming
+notation that will allow program designs to be represented and discussed. As it is graphical in nature it
+becomes easy to visualise, understand and discuss the information presented in the diagram. However
+as the diagrams represent technical information they must be precise and clear – in order for them to
+work therefore there is a precise notation that must be followed.
+
+As UML is not a methodology it is left to the user to follow whatever processes they deem appropriate
+in order to generate the designs described by the diagrams. UML does not constrain this – it merely
+allows those designs to be expressed in an easy to use, but precise, graphical notation.
+2.2 UML Class diagrams
+Classes are the basic components of any object oriented software system and UML class diagrams provide
+an easy way to represent these. As well as showing individual classes, in detail, class diagrams show
+multiple classes and how they are related to each other. Thus a class diagram shows the architecture of
+a system.
+A class consists of:-
+• a unique name (conventionally starting with an uppercase letter)
+• a list of attributes (int, double, boolean, String etc)
+• a list of methods
+
+This is shown in a simple box structure...
+
+ClassName
+attributes
+
+methods()
+
+For attributes and methods visibility modifiers are shown (+ for public access, – for private access).
+Attributes normally being kept private and methods normally made public.
+Note: String shown above is not a primitive data type but is itself a class. Hence it starts with a capital letter.
+Thus a class Book, with String attributes of title and author, and the following methods setTitle(),
+getTitle(), setAuthor(), getAuthor() and toString() would be shown as...
+
+Book
+- title :String
+- author :String
++setTitle()
++getTitle()
++setAuthor()
++getAuthor()
++toString()
+
+Activity 1
+Draw a diagram to represent a class called ‘BankAccount’ with the attribute balance (of type int)
+and methods depositMoney() and withdrawMoney(). Show appropriate visibility modifiers.
+
+Feedback 1
+
+BankAccount
+- balance :int
++depositMoney()
++withdrawMoney()
++displayBalance()
+
+The diagram above shows this information
+UML allows us to suppress any information we do not wish to highlight in our diagrams – this allows
+us to suppress irrelevant detail and bring to the readers attention just the information we wish to focus
+on. Therefore the following are all valid class diagrams...
+Firstly with the access modifiers not shown...
+
+BankAccount
+balance :int
+depositMoney()
+withdrawMoney()
+displayBalance()
+
+Secondly with the access modifiers and the data type not shown...
+
+BankAccount
+balance :int
+depositMoney()
+withdrawMoney()
+displayBalance()
+
+
+
 
 
