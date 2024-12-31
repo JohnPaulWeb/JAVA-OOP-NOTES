@@ -5,6 +5,7 @@ JAVA OOP NOTES
 An Introduction to Object
 
 Orientated Programming
+
 Introduction
 This chapter will discuss different programming paradigms and the advantages of the Object Oriented
 approach to software development and modelling. The concepts on which object orientation depend
